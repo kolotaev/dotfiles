@@ -1,4 +1,0 @@
-alias cw = cd $work
-alias cww = cd $www
-alias g = git
-alias ll = ls -la

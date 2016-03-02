@@ -1,5 +1,12 @@
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# EXPORTS #
 
-if [ -f bootstrap ]; then
-  source bootstrap
-fi
+export WWWDIR = '/Applications/MAMP/htdocs'
+export WORKDIR = "$HOME/work"
+
+
+# ALIASES #
+
+alias cw = cd $work
+alias cww = cd $www
+alias g = git
+alias ll = ls -lahG

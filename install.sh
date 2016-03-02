@@ -1,31 +1,41 @@
-#!/bin/bash
-############################
-# .make.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
-############################
+#! /bin/bash
 
-########## Variables
+# Egor Kolotaev
+#
+# WHAT'S THIS? A BASH SCRIPT THAT INSTALLS AND REMOVES DOTFILES#
+# It is done by symlinking dotfiles from this repo
+# to corresponding ones in your home directory.
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
+# Adds a symbolic link to files in ~/.dotfiles
+# to your home directory.
+function symlink_files() {
+  ignoredfiles=(LICENSE readme.md install.sh get-omzsh.sh zsh-theme)
 
-##########
+  for f in $(ls -d *); do
+    if [[ ${ignoredfiles[@]} =~ $f ]]; then
+      echo "Skipping $f ..."
+    else
+      link_file $f
+    fi
+  done
+}
 
-# create dotfiles_old in homedir
-echo "Creating $olddir for backup of any existing dotfiles in ~"
-mkdir -p $olddir
-echo "...done"
+# symlink a file
+# arguments: filename
+function link_file(){
+  echo "linking ~/.$1"
+  if ! $(ln -s "$PWD/$1" "$HOME/.$1");  then
+    echo "Replace file '~/.$1'?"
+    read -p "[Y/n]?: " Q_REPLACE_FILE
+    if [[ $Q_REPLACE_FILE != 'n' ]]; then
+      replace_file $1
+    fi
+  fi
+}
 
-# change to the dotfiles directory
-echo "Changing to the $dir directory"
-cd $dir
-echo "...done"
-
-# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
-for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
-done
+# replace file
+# arguments: filename
+function replace_file() {
+  echo "replacing ~/.$1"
+  ln -sf "$PWD/$1" "$HOME/.$1"
+}
