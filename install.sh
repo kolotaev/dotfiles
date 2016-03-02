@@ -22,7 +22,7 @@ function symlink_files() {
 
 # symlink a file
 # arguments: filename
-function link_file(){
+function link_file() {
   echo "linking ~/.$1"
   if ! $(ln -s "$PWD/$1" "$HOME/.$1");  then
     echo "Replace file '~/.$1'?"
