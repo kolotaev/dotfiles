@@ -1,0 +1,15 @@
+[user]
+    name = kolotaev
+    email = kolotaev@tut.by
+[color]
+  branch = auto
+  diff = auto
+  grep = auto
+  status = auto
+  ui = true
+[alias]
+    s = status
+    c = commit
+    co = checkout
+    br = branch
+    fe = fetch
