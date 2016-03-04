@@ -3,3 +3,8 @@
 function meme() {
   history | grep $1
 }
+
+# reload current dir.
+function recd() {
+  cd - && cd -
+}
