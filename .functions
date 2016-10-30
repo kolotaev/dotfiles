@@ -4,11 +4,6 @@ function meme() {
   history | grep $1
 }
 
-# reload current dir.
-function recd() {
-  cd - && cd -
-}
-
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";
