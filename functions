@@ -1,5 +1,0 @@
-# shorthand for history | grep
-# arguments: search-pattern
-function meme() {
-  history | grep $1
-}

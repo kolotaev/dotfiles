@@ -34,6 +34,14 @@ alias reload = "exec $SHELL -l"
 # bundler
 alias bex = "bundler exec"
 
+# docker
+alias dox = "docker exec"
+alias dops = "docker ps"
+alias dor = "docker run"
+alias dok = "docker kill"
+alias dob = "docker build"
+
+# ======== #
 # OSX specific #
 
 # Disable Spotlight
@@ -44,5 +52,3 @@ alias spoton="sudo mdutil -a -i on"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"

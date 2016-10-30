@@ -10,19 +10,6 @@
   grep = auto
   status = auto
   ui = true
-[alias]
-  s = status
-  c = commit
-  co = checkout
-  br = branch
-  fe = fetch
-
-[sendemail]
-  smtpencryption = tls
-  smtpserver = smtp.gmail.com
-  smtpuser = pavan.sss1991@gmail.com
-  smtppass = password
-  smtpserverport = 587
 [web]
   browser = google-chrome
 [instaweb]
@@ -48,19 +35,6 @@
   added = green bold
   changed = yellow bold
   untracked = red bold
-[diff]
-  tool = vimdiff
-[difftool]
-  prompt = false
-[github]
-  user = pkumar
-  token = token
-[gitflow "prefix"]
-  feature = feature-
-  release = release-
-  hotfix = hotfix-
-  support = support-
-  versiontag = v
 [alias]
   a = add --all
   ai = add -i

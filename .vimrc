@@ -63,7 +63,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'reedes/vim-lexical'
 
 Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-easytags'
 
 Plugin 'Valloric/MatchTagAlways'
 
