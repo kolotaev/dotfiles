@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # shorthand for history | grep
 # arguments: search-pattern
 function meme() {
