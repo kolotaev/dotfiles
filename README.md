@@ -15,4 +15,4 @@ Simple as that.
 
 # What else
 Ah yes, almost forgot, and one of that shiny hipster terminal windows you adore so much!
-![Screenshot of my shell prompt](http://imgur.com/aabBsg9)
+![Screenshot of my shell prompt](http://i.imgur.com/aabBsg9.png)
