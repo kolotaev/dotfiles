@@ -95,7 +95,7 @@ fi;
 timeStyle="${yellow}"
 
 emojis=(🐶 🐗 🐺 🐝 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐮 🐵 🐼 🐧 🐍 🐢 🐙 🐠 🐳 🐬 🐥)
-emoji='`echo ${emojis[$RANDOM % 22]}`'
+emoji='`echo ${emojis[$RANDOM % 24]}`'
 
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
