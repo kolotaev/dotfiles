@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# golang
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/work/kolotaev/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin

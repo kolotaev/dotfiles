@@ -1,25 +1,19 @@
 #!/usr/bin/env bash
 
-#---------#
-# ALIASES #
-#---------#
-
 # ================== #
 # common unix commands
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias recd="cd .. && cd -"
+alias cdw = cd $MY_WORK_DIR
+alias cdv = cd $MY_WWW_DIR
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-alias recd="cd .. && cd -"
-alias cw = cd $work
-alias cww = cd $www
-alias ll = ls -la
+alias ll ="ls -la"
 
-# git as you know it)
-alias g = git
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
