@@ -20,7 +20,8 @@ function symlink_files() {
 function link_file() {
   echo "linking $1"
   if ! $(ln -s "$PWD/$1" "$HOME/.$1"); then
-    replace_file(".$1")
+    f=".$1"
+    replace_file $f
     echo "now attempting to link $1 once again"
     ln -s "$PWD/$1" "$HOME/.$1"
   fi
@@ -30,7 +31,11 @@ function link_file() {
 # arguments: filename
 function replace_file() {
   echo "Moving already existing $1 file to $BAK_DIR"
-  mv $1 $BAK_DIR
+  if [ ! -d "$BAK_DIR" ]; then
+    mkdir -p "$BAK_DIR"
+  fi
+  echo "moving $1"
+  mv "$HOME/$1" "$BAK_DIR"
 }
 
 # =============== Main action goes here =================

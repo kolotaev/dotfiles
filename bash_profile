@@ -1,8 +1,8 @@
-source ".exports";
-source ".path";
-source ".bash_prompt";
-source ".aliases";
-source ".functions";
+source "$HOME/.exports";
+source "$HOME/.path";
+source "$HOME/.bash_prompt";
+source "$HOME/.aliases";
+source "$HOME/.functions";
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;

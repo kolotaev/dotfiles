@@ -6,13 +6,13 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias recd="cd .. && cd -"
-alias cdw = cd $MY_WORK_DIR
-alias cdv = cd $MY_WWW_DIR
+alias cdw="cd $MY_WORK_DIR"
+alias cdv="cd $MY_WWW_DIR"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-alias ll ="ls -la"
+alias ll="ls -la --color=auto"
 
 
 # Intuitive map function
@@ -21,7 +21,7 @@ alias ll ="ls -la"
 alias map="xargs -n1"
 
 # shell reload
-alias reload = "exec $SHELL -l"
+alias reload="exec $SHELL -l"
 
 # get local ip
 alias localip="ipconfig getifaddr en0"
@@ -29,15 +29,15 @@ alias localip="ipconfig getifaddr en0"
 
 # ================== #
 # bundler
-alias bex = "bundler exec"
+alias bex="bundler exec"
 
 # ================== #
 # docker
-alias dox = "docker exec"
-alias dops = "docker ps"
-alias dor = "docker run"
-alias dok = "docker kill"
-alias dob = "docker build"
+alias dox="docker exec"
+alias dops="docker ps"
+alias dor="docker run"
+alias dok="docker kill"
+alias dob="docker build"
 
 # ================== #
 # OSX specific #

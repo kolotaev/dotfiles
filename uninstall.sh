@@ -8,26 +8,25 @@ function delete_symlinks() {
 
   for f in $(ls -d *); do
     if [[ ${ignoredfiles[@]} =~ $f ]]; then
-      echo "Deleting file $f from ~"
-      rm "$HOME/.$f"
+      echo "Skipping $f ..."
+    else
+      if [[ -f "$HOME/.$f" && -L "$HOME/.$f" ]]; then
+        echo "Deleting symlink .$f from $HOME"
+        rm "$HOME/.$f"
+      fi
     fi
-  done
-
-  for f in $(ls -A $BAK_DIR); do
-    echo "Putting backed-up file $f from back to ~"
-    mv $f "$HOME/$f"
   done
 }
 
 # restore backed-up files
 function restore_from_backup() {
   for f in $(ls -A $BAK_DIR); do
-    echo "Putting backed-up file $f from back to ~"
-    mv $f "$HOME/$f"
+    echo "Putting backed-up file $f from back to $HOME"
+    mv "$BAK_DIR/$f" "$HOME/$f"
   done
 }
 
-echo "Setting up Operating System..."
+echo "Rolling-back Operating System..."
 
 set -e
 (
@@ -38,7 +37,7 @@ set -e
   restore_from_backup
 
   echo "Removing $BAK_DIR - it's not longer needed"
-  rm $BAK_DIR
+  rm -r $BAK_DIR
 
   echo "Operating System rollback complete."
   echo "Reloading session..."
