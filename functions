@@ -37,7 +37,7 @@ function server() {
 
 # Configure vim.
 function configure_vim() {
-  mkdir -p ~/.dotfiles/vim/bundle
-  git clone https://github.com/gmarik/vundle ~/.dotfiles/vim/bundle/vundle
+
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   vim +PluginInstall +qall
 }
