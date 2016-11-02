@@ -49,4 +49,6 @@ set -e
   echo "Operating System setup complete."
   echo "Reloading session..."
   exec $SHELL -l
+
+  echo "You can add .extra file to $HOME to add your shell specific custom settings"
 )

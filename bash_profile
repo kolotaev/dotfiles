@@ -1,8 +1,7 @@
-source "$HOME/.exports";
-source "$HOME/.path";
-source "$HOME/.bash_prompt";
-source "$HOME/.aliases";
-source "$HOME/.functions";
+for file in ~/.{exports,path,bash_prompt,aliases,functions,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
