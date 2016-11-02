@@ -20,4 +20,4 @@ Simple as that.
 ## What else
 Ah yes, and one of that shiny hipster terminal windows you adore so much!
 
-![terminal screen](http://i.imgur.com/aabBsg9.png)
+![terminal screen](http://i.imgur.com/JUts5fg.png)
