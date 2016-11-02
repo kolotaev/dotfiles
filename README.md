@@ -10,6 +10,9 @@ Just run `install.sh` from root of this repo on your local machine.
 
 Script will install all the dotfiles to your home directory and backup already pre-existing ones, if any.
 
+## Extra config
+You can add your custom shell configuration in `~/.extra` file.
+
 ## Removal
 Just run `uninstall.sh` from root of this repo on your local machine.
 
