@@ -17,7 +17,7 @@ Script will remove all the installed dotfiles from your home directory and resto
 
 Simple as that.
 
-# What else
+## What else
 Ah yes, and one of that shiny hipster terminal windows you adore so much!
 
 ![Screenshot of my shell prompt](http://i.imgur.com/aabBsg9.png)
