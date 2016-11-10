@@ -8,12 +8,13 @@ alias ....="cd ../../.."
 alias recd="cd .. && cd -"
 alias cdw="cd $MY_WORK_DIR"
 alias cdv="cd $MY_WWW_DIR"
+alias cdd="cd $HOME/Downloads"
+alias cdde="cd $HOME/Desktop"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-alias ll="ls -la --color=auto"
-
+alias ll="ls -laGh"
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
@@ -26,6 +27,9 @@ alias reload="exec $SHELL -l"
 # get local ip
 alias localip="ipconfig getifaddr en0"
 
+# ================== #
+# git
+alias g="git"
 
 # ================== #
 # bundler

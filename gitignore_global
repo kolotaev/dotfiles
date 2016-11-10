@@ -36,5 +36,8 @@
 ehthumbs.db
 Thumbs.db
 
+# IDE
+.idea
+
 # User-defined
 vendor
