@@ -295,4 +295,3 @@ autocmd Filetype php setlocal ts=4 sw=4 autoindent
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
-
