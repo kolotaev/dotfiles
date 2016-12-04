@@ -86,6 +86,8 @@ Plugin 'tpope/vim-leiningen'
 Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-fireplace'
 Plugin 'venantius/vim-eastwood'
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'wlangstroth/vim-racket'
@@ -293,3 +295,4 @@ autocmd Filetype php setlocal ts=4 sw=4 autoindent
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
+
