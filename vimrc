@@ -87,7 +87,6 @@ Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-fireplace'
 Plugin 'venantius/vim-eastwood'
 Plugin 'luochen1990/rainbow'
-let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 Plugin 'vim-scripts/paredit.vim'
 Plugin 'wlangstroth/vim-racket'
@@ -141,7 +140,7 @@ set hlsearch
 set ignorecase
 set smartcase
 
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
+" Turn backup off, since most stuff is in SVN, git etc. anyway...
 set nobackup
 set nowb
 set noswapfile
@@ -198,6 +197,8 @@ let g:lexical#spelllang = ['en_us', 'ru_ru']
 " let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 let g:easytags_async = 1
+
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 " Automatically removing all trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
@@ -279,6 +280,9 @@ vmap <Leader>y :w! ~/.vbuf<CR>
 nmap <Leader>y :.w! ~/.vbuf<CR>
 " "paste the contents of the buffer file
 nmap <Leader>p :r ~/.vbuf<CR>
+
+" fireplace repl - map cpp (evaluate clojure in repl now!)
+nmap <Leader>p cpp
 
 au BufRead,BufNewFile {Vagrantfile,Gemfile,Capfile} set ft=ruby
 " au BufRead,BufNewFile *.phtml set ft=php
