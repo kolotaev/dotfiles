@@ -42,6 +42,7 @@ alias dops="docker ps"
 alias dor="docker run"
 alias dok="docker kill"
 alias dob="docker build"
+alias doka="docker stop \$(docker ps -q)"
 
 # ================== #
 # OSX specific #
