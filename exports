@@ -14,5 +14,5 @@ export HISTFILESIZE="${HISTSIZE}";
 export HISTCONTROL='ignoreboth';
 
 # custom dirs
-export MY_WORK_DIR='$HOME/work'
-export MY_WWW_DIR='$HOME/www'
+export MY_WORK_DIR="${HOME}/work"
+export MY_WWW_DIR="${HOME}/www"
