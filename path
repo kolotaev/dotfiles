@@ -4,3 +4,9 @@
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH="${MY_WORK_DIR}/go"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# If your Rust is installed via rustup.
+if [ -f $HOME/.cargo/env ]; then
+  source $HOME/.cargo/env
+fi
+

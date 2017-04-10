@@ -41,3 +41,8 @@ function configure_vim() {
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   vim +PluginInstall +qall
 }
+
+function clojide() {
+  open "http://localhost:4000"
+  lein nightlight
+}
