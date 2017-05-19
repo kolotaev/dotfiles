@@ -36,6 +36,13 @@ alias g="git"
 alias bex="bundler exec"
 
 # ================== #
+# vagrant
+alias vu="vagrant ssh"
+alias vus="vagrant ssh && vagrant ssh"
+alias vs="vagrant ssh"
+alias vh="vagrant halt"
+
+# ================== #
 # docker
 alias dox="docker exec"
 alias dops="docker ps"
