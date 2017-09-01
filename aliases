@@ -37,8 +37,8 @@ alias bex="bundler exec"
 
 # ================== #
 # vagrant
-alias vu="vagrant ssh"
-alias vus="vagrant ssh && vagrant ssh"
+alias vu="vagrant up"
+alias vus="vagrant up && vagrant ssh"
 alias vs="vagrant ssh"
 alias vh="vagrant halt"
 
