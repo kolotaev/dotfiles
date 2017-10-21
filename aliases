@@ -46,10 +46,13 @@ alias vh="vagrant halt"
 # docker
 alias dox="docker exec"
 alias dops="docker ps"
+alias dopsa="docker ps -a"
 alias dor="docker run"
 alias dok="docker kill"
 alias dob="docker build"
-alias doka="docker stop \$(docker ps -q)"
+alias doka="docker rm -f $(docker ps -q -a)"
+alias docu="docker-compose up"
+alias docd="docker-compose down"
 
 # ================== #
 # OSX specific #
@@ -58,9 +61,9 @@ alias doka="docker stop \$(docker ps -q)"
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
+alias spotoff="sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
 # Enable Spotlight
-alias spoton="sudo mdutil -a -i on"
+alias spoton="sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
