@@ -50,7 +50,7 @@ alias dopsa="docker ps -a"
 alias dor="docker run"
 alias dok="docker kill"
 alias dob="docker build"
-alias doka="docker rm -f $(docker ps -q -a)"
+alias doka="docker rm -f \$(docker ps -q -a)"
 alias docu="docker-compose up"
 alias docd="docker-compose down"
 
