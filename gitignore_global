@@ -41,9 +41,3 @@ Thumbs.db
 *.iml
 
 # User-defined
-vendor
-vendor/*
-vendor/
-/vendor
-../vendor
-
