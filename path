@@ -12,4 +12,7 @@ fi
 
 export PATH="/usr/local/sbin:$PATH"
 
-export PATH="~/.rbenv/shims:$PATH"
+if [ -f $HOME/.rbenv/shims ]; then
+  PATH="$HOME/.rbenv/shims:$PATH"
+fi
+
