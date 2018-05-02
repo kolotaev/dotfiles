@@ -34,6 +34,7 @@
   cem = commit --allow-empty -m
   cam = commit -am
   cd = commit --amend
+  cdo = commit --amend -C HEAD
   cad = commit -a --amend
   ced = commit --allow-empty --amend
   #############
