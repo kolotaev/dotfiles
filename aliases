@@ -24,8 +24,12 @@ alias map="xargs -n1"
 # shell reload
 alias reload="exec $SHELL -l"
 
+# ================== #
+# Network
 # get local ip
 alias localip="ipconfig getifaddr en0"
+
+alias openports="lsof -Pn -i4"
 
 # ================== #
 # git

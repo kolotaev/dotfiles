@@ -15,3 +15,8 @@ if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
+
+# this is for back-forward-by-word in IntelliJ
+bind '"[D": backward-word'
+bind '"[C": forward-word'
+

@@ -9,6 +9,10 @@ function symlink_files() {
   for f in $(ls -d *); do
     if [[ ${ignoredfiles[@]} =~ $f ]]; then
       echo "Skipping $f ..."
+#    elif [[ -d $f ]]; then
+#      cd $f
+#      symlink_files
+#      cd -
     else
       link_file $f
     fi
