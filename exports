@@ -11,7 +11,7 @@ export LC_ALL='en_US.UTF-8';
 export HISTSIZE='32768';
 export HISTFILESIZE="${HISTSIZE}";
 # Omit duplicates and commands that begin with a space from history.
-export HISTCONTROL='ignoreboth';
+export HISTCONTROL=ignoreboth:erasedups;
 
 # custom dirs
 export MY_WORK_DIR="${HOME}/work"
