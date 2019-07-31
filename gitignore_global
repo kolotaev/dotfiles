@@ -39,4 +39,6 @@ Thumbs.db
 .idea/
 *.iml
 .vscode/
+.history/
+
 examples/ft/
