@@ -34,11 +34,17 @@
 ehthumbs.db
 Thumbs.db
 
-# IDE
+# IDEs
+
+# Intellij
 .idea
 .idea/
 *.iml
+
+# VS Code
 .vscode/
 .history/
+.bloop/
+.metals/
 
 examples/ft/

@@ -6,15 +6,18 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+indent_style = space
 
 # Python
 [*.py]
-indent_style = space
 indent_size = 4
+
+# Ruby
+[*.{rb,erb}]
+indent_size = 2
 
 # JS-related
 [*.{js,ls,ts}]
-indent_style = space
 indent_size = 2
 
 # Tab indentation (no size specified)
