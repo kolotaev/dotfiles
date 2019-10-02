@@ -15,4 +15,3 @@ export PATH="/usr/local/sbin:$PATH"
 if [ -f $HOME/.rbenv/shims ]; then
   PATH="$HOME/.rbenv/shims:$PATH"
 fi
-
