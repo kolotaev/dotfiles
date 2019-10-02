@@ -1,7 +1,7 @@
 # My dotfiles
 
 ## What is it?
-I assume you know what dotfiles are. If yet not, go ahead and google it!
+I assume you know what dotfiles are. If not yet, go ahead and google it!
 
 This one is a collection of common dotfiles I stumbled across while surfing github and those emerged from my day-to-day work.
 
