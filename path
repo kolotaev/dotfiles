@@ -15,3 +15,6 @@ export PATH="/usr/local/sbin:$PATH"
 if [ -f $HOME/.rbenv/shims ]; then
   PATH="$HOME/.rbenv/shims:$PATH"
 fi
+
+# Add vscode executable for macOS
+PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
