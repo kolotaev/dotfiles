@@ -45,3 +45,20 @@ function clojide() {
   open "http://localhost:4000"
   lein nightlight
 }
+
+# List all formulas that aren't dependent of any other formulas (leaves) and in front of them list all its dependencies
+function brew-inventory() {
+	brew leaves | xargs brew deps --installed --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"
+}
+
+# Watch for something to happen and execute a command on this event
+# Example: watch-cmd "/path/to/file.css" "make css"
+function watch-cmd() {
+	WATCH_COMMAND=${1}
+	COMMAND=${2}
+	while true; do
+	  watch -d -g "${WATCH_COMMAND}"
+	  ${COMMAND}
+	  sleep 1     # to allow break script by Ctrl+c
+	done
+}
