@@ -4,8 +4,8 @@
                   [lein-cljfmt "0.5.7"]
                   ; [venantius/ultra "0.5.2"]
                   [nightlight/lein-nightlight "1.9.3"]
-                  [io.aviso/pretty "0.1.34"]
+                  [io.aviso/pretty "0.1.37"]
                   [lein-cloverage "1.0.10"]]
-        :dependencies [[io.aviso/pretty "0.1.34"]]
-
+        :middleware [io.aviso.lein-pretty/inject]
+        :dependencies [[io.aviso/pretty "0.1.37"]]
         :cljfmt {:remove-consecutive-blank-lines? false}}}

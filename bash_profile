@@ -17,6 +17,5 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # this is for back-forward-by-word in IntelliJ
-bind '"[D": backward-word'
-bind '"[C": forward-word'
-
+# bind '"[D": backward-word'
+# bind '"[C": forward-word'

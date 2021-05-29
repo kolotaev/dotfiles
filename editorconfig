@@ -12,6 +12,11 @@ indent_style = space
 [*.py]
 indent_size = 4
 
+# Go
+[*.go]
+indent_style = tab
+indent_size = 4
+
 # Ruby
 [*.{rb,erb}]
 indent_size = 2
