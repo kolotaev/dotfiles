@@ -16,6 +16,12 @@ elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
 
+# Add bash completion for Git.
+# Download it by: curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+	source ~/.git-completion.bash;
+fi;
+
 # Supress MacOS zsh non-default shell warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
