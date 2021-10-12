@@ -40,13 +40,17 @@ alias g="git"
 alias bex="bundler exec"
 
 # ================== #
+# Set varables in .extra
 # vagrant
-alias vu="vagrant up"
-alias vus="vagrant up && vagrant ssh"
-alias vs="vagrant ssh"
-alias vh="vagrant halt"
+alias vu="vagrant up ${VAGRANT_DEFAULT_MACHINE_ID}"
+alias vus="vagrant up ${VAGRANT_DEFAULT_MACHINE_ID} && vagrant ssh ${VAGRANT_DEFAULT_MACHINE_ID}"
+alias vs="vagrant ssh ${VAGRANT_DEFAULT_MACHINE_ID}"
+alias vh="vagrant halt ${VAGRANT_DEFAULT_MACHINE_ID}"
+# VirtualBox (since Vagrant can't pause)
+alias vp="VBoxManage controlvm ${VB_DEFAULT_MACHINE_NAME} pause"
+alias vr="VBoxManage controlvm ${VB_DEFAULT_MACHINE_NAME} resume"
 
-# ================== #
+# ================== #s
 # docker
 alias dox="docker exec"
 alias dops="docker ps"
