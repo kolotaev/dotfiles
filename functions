@@ -62,3 +62,8 @@ function watch-cmd() {
 	  sleep 1     # to allow break script by Ctrl+c
 	done
 }
+
+# SSH into MacOS Docker desktop virtual machine
+function docker-vm-ssh() {
+	stty -echo -icanon && nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock && stty sane
+}
